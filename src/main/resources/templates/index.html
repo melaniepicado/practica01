@@ -6,26 +6,27 @@
         <link href="css/estilo1.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <header th:replace="layout/plantilla :: header"/>
-        <h2>Listado de paises poco conocidos</h2>
-        <nav>
-            <a th:href="@{/nuevoPais}">Nuevo País</a>
-        </nav>
-        <section>
+    <header th:replace="layout/plantilla :: header"/>
+    <h2>Paises Poco Reconocidos</h2>
+     <nav id="navegador">
+         <a th:href="@{/nuevoPais}" >Nuevo País</a>
+     </nav>
+         
+        <section id="contenido">
             <div th:if = "${paises != null and !paises.empty}">
-                <table border="1">
-                    <thead>
+                <table border="1"  style="border-color: black">
+                    <thead id="thead">
                         <tr>
                             <th>Nombre:</th>
                             <th>Capital:</th>
                             <th>Idioma:</th>
-                            <th>Continente:</th>
                             <th>Población:</th>
+                            <th>Continente:</th>
                             <th>Eliminar</th>
                             <th>Modificar</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody id="tbody">
                         <tr th:each="pais : ${paises}">
                             <td th:text="${pais.nombre}"></td>
                             <td th:text="${pais.capital}"></td>

@@ -6,10 +6,34 @@
     </head>
     <body>
         <header id="encabezado" th:fragment="header">
-            <h1>Paises</h1>
-        </header>
-        <footer style="color: darkslategrey" th:fragment="footer">
-            <p>&COPY Derechos Reservados 2022 </p>
-        </footer>
-    </body>
+        <h1>Paises</h1>
+    </header>
+    
+  
+    
+    
+       <table id="tabla thead tr th" border="1" th:fragmet="table" >
+                    <thead>
+                        <tr>
+                            <th>Nombre:</th>
+                            <th>Capital:</th>
+                            <th>Idioma:</th>
+                            <th>Continente:</th>
+                            <th>Población:</th>
+                            <th>Eliminar</th>
+                            <th>Modificar</th>
+                        </tr>
+                    </thead>
+                </table>
+    
+    
+
+    
+
+
+
+
+    <footer id="pieDePagina"   th:fragment="footer">
+        <p>&COPY Derechos Reservados 2022 </p>
+    </footer>
 </html>

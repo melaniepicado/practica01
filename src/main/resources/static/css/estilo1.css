@@ -11,44 +11,147 @@
     width: 100%;
     background-color: blue;
     color: white;
+    text-align: center;
 }
-
 #encabezado h1{
     display: inline;
     text-align: center;
     color: red;
-    
+
 }
 
-#menu a{
-    background-color: red;
-    color: black;
+#thead{
+    text-align: center;
+    background-color: black;
+    color: steelblue;
+
+}
+#tbody{
+    text-align: center;
+    background-color: darkslategray;
+    color:white;
+
+
+}
+
+#navegador{
+    position: absolute;
+    top:8%;
+    height: 6%;
+    left: 0;
+    width: 100%;
+    background-color: grey;
+    color: powderblue;
     text-decoration: none;
 }
 
-#menu a:hover{
+#navegador a:hover{
     background-color: green;
     color: white;
-    text-decoration: none;
-}
 
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: white;
+    transition: 0.5s;
+    color:black;
+
+
+
+}
+#navegador a{
+    background-color: slategrey;
+    top: 8%;
+    margin-left: 50px;
+    text-decoration:none;
+
+}
 #contenido{
     position: absolute;
-    top: 12%;
-    left: 19%;
-    height: 81%;
-    width: 80%;
-    background-color: #7901A0;
+    top: 14%;
+    left: 0;
+    height: 80%;
+    width: 100%;
+    background-color: goldenrod;
     padding: 10px ;
     overflow: auto;
+    text-align: center;
+
 }
+
+
+
+
+#form{
+    background-color: slategrey;
+    position: absolute;
+    left: 0;
+    top: 20%;
+    width: 100%;
+    height: 25%;
+
+    padding-top: 20px;
+    padding-left: 20px;
+}
+#encabezadoAP{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8%;
+    width: 100%;
+    background-color: darkslategrey;
+    display: inline;
+
+
+}
+#input[type="submit"]{
+    
+    background-color: darkmagenta;
+}
+#form input[type="text"]{
+   background-color: dimgrey;
+    color: white;
+}
+#form input[type="number"]{
+   background-color: dimgrey;
+    color: white;
+}
+
+#navegadorAP{
+    top: 8.0%;
+    background-color: darkcyan;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-bottom: 5px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+
+}
+#h2Plantilla{
+    background-color: black;
+    position: absolute;
+    top: 10%;
+    left: 0%;
+    width: 100%;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-bottom: 10px
+
+}
+
+
+
+
+
+
+
 
 #pieDePagina{
     position: absolute;
     bottom: 0;
     left: 0;
-    height: 4%;
+    height: 6%;
     width: 100%;
-    background-color: #AABB00;
+    background-color: black;
     text-align: center;
 }

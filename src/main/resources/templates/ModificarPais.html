@@ -2,15 +2,18 @@
     <head>
         <title>Paises</title>
         <meta charset="UTF-8">
+        <link href="css/estilo1.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <header th:replace="layout/plantilla :: header"/>
+        <header th:replace="layout/agregarPais :: header"/>
         <h2>Datos del país</h2>
-        <a th:href="@{/}">Regresar</a>
-        <br/>
+        <nav id="navegadorAP"><a th:href="@{/}">Regresar</a></nav>
+        
+        
+        <div th:replace="layout/agregarPais :: div"/>
         <form th:action="@{/guardarPais}"
             method="post"
-            th:object="${pais}">
+            th:object="${pais}" id="form">
             <input type="hidden" name="idPais" th:field="*{idPais}"/>
             <label for="nombre">Nombre:</label>
             <input type="text" name="nombre" th:field="*{nombre}"/>
@@ -28,9 +31,9 @@
             <label for="poblacion">Poblacion:</label>
             <input type="number" name="poblacion" th:field="*{poblacion}"/>
             <br/>
-            <input type="submit" name="guardar" value="Guardar"/>
+            <input type="submit" name="guardar" value="Guardar" id="input"/>
             <br/>
         </form>
-        <footer th:replace="layout/plantilla :: footer" />
+        <footer th:replace="layout/agregarPais :: footer" />
     </body>
 </html>
