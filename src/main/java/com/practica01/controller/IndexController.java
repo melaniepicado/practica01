@@ -28,7 +28,7 @@ public class IndexController {
     
     @GetMapping("/nuevoPais")
     public String nuevoPais(Pais pais){
-        return "ModificarPais";
+        return "nuevoPais";
     }
     
     @PostMapping("/guardarPais")

@@ -1,0 +1,9 @@
+{
+    "elements": {},
+    "attributes": {
+        "th:object": {},
+        "th:replace": {},
+        "th:href": {},
+        "th:field": {}
+    }
+}

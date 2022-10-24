@@ -1,5 +1,3 @@
-
-
 <html xmlns: th="http://www.thymeleaf.org" 
       xmlns="http://www.w3.org/1999">
     <head>
@@ -8,18 +6,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/estilo1.css" rel="stylesheet" type="text/css"/>
     </head>
-    
+
     <body>
-    <header th:fragment="header" id="encabezadoAP">
-        <h1>Nuevo Pais</h1>
-    </header>
-        <div th:fragment="div"><h2 id="h2Plantilla">Ingrese los datos del País por registrar </h2></div>
-        
-        
-       
-        
+        <header th:fragment="header" id="encabezadoAP">
+            <h1>País</h1>
+        </header>
+        <div th:fragment="div">
+            <h2 id="h2Plantilla">Ingrese los datos del País</h2>
+        </div>
         <footer id="pieDePagina"   th:fragment="footer">
-        <p>&COPY Derechos Reservados 2022 </p>
-    </footer>
+            <p>&COPY Derechos Reservados 2022 </p>
+        </footer>
     </body>
 </html>

@@ -5,7 +5,6 @@
         <link href="css/estilo1.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        
         <header th:replace="layout/agregarPais :: header"/>
         <nav id="navegadorAP"><a th:href="@{/}">Regresar</a></nav>
         <div th:replace="layout/agregarPais :: div"/>
@@ -24,6 +23,7 @@
             <br/>
             <label for="continente">Continente:</label>
             <input type="text" name="continente" th:field="*{continente}"/>
+            <br/>
             <br/>
             <label for="poblacion">Poblacion:</label>
             <input type="number" name="poblacion" th:field="*{poblacion}"/>

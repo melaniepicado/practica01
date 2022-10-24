@@ -23,7 +23,7 @@ INSERT INTO `practica`.`estado` (`nombre`, `capital`, `idioma`, `poblacion`, `co
 	VALUES ('Omán', 'Antananarivo', 'Malgache y francés', '4.527.000', 'Asia');
 
 /* Crear un usuario */
-CREATE USER 'usuario_practica' @'%' IDENTIFIED BY 'la_Clave.';
+CREATE USER 'usuario_practica' @'%' IDENTIFIED BY 'la_Clave';
 
 /* Se asignan los priviliegios */
 GRANT ALL PRIVILEGES ON practica.* to 'usuario_practica';

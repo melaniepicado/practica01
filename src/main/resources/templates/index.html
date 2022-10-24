@@ -6,12 +6,12 @@
         <link href="css/estilo1.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-    <header th:replace="layout/plantilla :: header"/>
-    <h2>Paises Poco Reconocidos</h2>
-     <nav id="navegador">
-         <a th:href="@{/nuevoPais}" >Nuevo País</a>
-     </nav>
-         
+        <header th:replace="layout/plantilla :: header"/>
+        <h2>Paises Poco Reconocidos</h2>
+        <nav id="navegador">
+            <a th:href="@{/nuevoPais}" >Nuevo País</a>
+        </nav>
+
         <section id="contenido">
             <div th:if = "${paises != null and !paises.empty}">
                 <table border="1"  style="border-color: black">
